@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star's Sky — Joyce Babake · Développeuse Web</title>
+<meta name="description" content="Star's Sky — Portfolio de Joyce Babake, développeuse web full-stack à Lomé, Togo. Oser l'infini.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="page-transition"><span class="page-transition-mark">✦</span></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-mark" data-transition>
+    <span class="nav-mark-glyph">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M50 8C50 8 72 32 72 54C72 70 62 80 50 80C38 80 28 70 28 54C28 38 38 30 38 30C38 30 42 42 48 42C54 42 50 22 50 8Z" fill="url(#navgrad)"/>
+        <defs><linearGradient id="navgrad" x1="28" y1="8" x2="72" y2="80"><stop stop-color="#f5e1a4"/><stop offset="1" stop-color="#b8762e"/></linearGradient></defs>
+      </svg>
+    </span>
+    <span class="nav-mark-text">Star's <em>Sky</em></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-transition>Accueil</a></li>
+    <li><a href="apropos.html" data-transition>À propos</a></li>
+    <li><a href="projets.html" data-transition>Projets</a></li>
+    <li><a href="contact.html" data-transition>Contact</a></li>
+  </ul>
+  <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html" data-transition>Accueil</a>
+  <a href="apropos.html" data-transition>À propos</a>
+  <a href="projets.html" data-transition>Projets</a>
+  <a href="contact.html" data-transition>Contact</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-flame" id="flame-canvas"></div>
+  <div class="hero-hint r" data-delay="1400">
+    <span class="hero-hint-icon">⟲</span>
+    <span class="hero-hint-text">Glissez pour faire pivoter · Molette pour zoomer</span>
+  </div>
+
+  <div class="hero-text">
+    <div class="eyebrow r" data-delay="200">Lomé, Togo · Développeuse Web</div>
+    <h1 class="display hero-title">
+      <span class="r-mask"><span class="line">Star's</span></span>
+      <span class="r-mask"><span class="line"><em>Sky.</em></span></span>
+    </h1>
+    <p class="hero-byline r" data-delay="500">Joyce Babake</p>
+    <p class="hero-claim r" data-delay="650">Oser l'infini — un site, une appli, une idée à la fois.</p>
+  </div>
+
+  <div class="hero-scroll r" data-delay="900">
+    <span>Découvrir</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</header>
+
+<!-- BANDE DÉFILANTE -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Développement Web</span><span class="dot">✦</span>
+    <span>Laravel & PHP</span><span class="dot">✦</span>
+    <span>UI / UX</span><span class="dot">✦</span>
+    <span>Gestion de projet</span><span class="dot">✦</span>
+    <span>Bases de données</span><span class="dot">✦</span>
+    <span>Développement Web</span><span class="dot">✦</span>
+    <span>Laravel & PHP</span><span class="dot">✦</span>
+    <span>UI / UX</span><span class="dot">✦</span>
+    <span>Gestion de projet</span><span class="dot">✦</span>
+    <span>Bases de données</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- INTRO COURTE -->
+<section class="section intro">
+  <div class="intro-grid">
+    <div class="intro-label r">
+      <div class="eyebrow">Présentation</div>
+    </div>
+    <div class="intro-text">
+      <p class="display intro-quote r" data-delay="100">
+        Je conçois des expériences web <em>soignées</em>, du premier croquis jusqu'à la mise en ligne — et bien après, en assurant le suivi.
+      </p>
+      <a href="apropos.html" class="btn btn-ghost intro-link r magnetic" data-delay="250" data-transition>
+        En savoir plus sur mon parcours →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APERÇU COMPÉTENCES -->
+<section class="section skills-preview">
+  <div class="section-head r">
+    <div class="eyebrow">Savoir-faire</div>
+    <h2 class="display section-title">Ce qui me définit</h2>
+  </div>
+  <div class="skill-row">
+    <div class="skill-line r">
+      <span class="skill-num">01</span>
+      <span class="skill-name">Développement Frontend</span>
+      <span class="skill-tags">HTML · CSS · JavaScript · React</span>
+    </div>
+    <div class="skill-line r" data-delay="80">
+      <span class="skill-num">02</span>
+      <span class="skill-name">Développement Backend</span>
+      <span class="skill-tags">Laravel · PHP · Java · C</span>
+    </div>
+    <div class="skill-line r" data-delay="160">
+      <span class="skill-num">03</span>
+      <span class="skill-name">Bases de données</span>
+      <span class="skill-tags">MySQL · SQL · Modélisation</span>
+    </div>
+    <div class="skill-line r" data-delay="240">
+      <span class="skill-num">04</span>
+      <span class="skill-name">Gestion de projet</span>
+      <span class="skill-tags">Analyse des besoins → Déploiement → Maintenance</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS PHARES -->
+<section class="section work-preview">
+  <div class="section-head r">
+    <div class="eyebrow">Réalisations</div>
+    <h2 class="display section-title">Quelques <em>projets</em></h2>
+  </div>
+  <div class="work-grid">
+    <a href="https://boutique-en-ligne-orcin.vercel.app/" target="_blank" class="work-card r magnetic">
+      <div class="work-card-glow"></div>
+      <span class="work-card-tag">E-commerce</span>
+      <h3>Boutique en ligne</h3>
+      <p>Plateforme d'achat avec catalogue, panier et tunnel de commande.</p>
+      <span class="work-card-link">Voir le site ↗</span>
+    </a>
+    <a href="projets.html" class="work-card r magnetic" data-delay="100" data-transition>
+      <div class="work-card-glow"></div>
+      <span class="work-card-tag">Application Web</span>
+      <h3>App de logement</h3>
+      <p>Mise en relation pour la location de logements à Lomé. En développement.</p>
+      <span class="work-card-link">Voir le détail →</span>
+    </a>
+    <a href="projets.html" class="work-card r magnetic" data-delay="200" data-transition>
+      <div class="work-card-glow"></div>
+      <span class="work-card-tag">Site vitrine</span>
+      <h3>Dessins animés personnalisés</h3>
+      <p>Commande en ligne de dessins animés sur mesure pour enfants.</p>
+      <span class="work-card-link">Voir le détail →</span>
+    </a>
+  </div>
+  <a href="projets.html" class="btn btn-line r magnetic all-projects-btn" data-transition>Tous les projets →</a>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section cta-final">
+  <div class="cta-final-inner r">
+    <div class="eyebrow center">Un projet en tête ?</div>
+    <h2 class="display cta-final-title">Construisons-le<br><em>ensemble.</em></h2>
+    <a href="contact.html" class="btn btn-fill magnetic" data-transition><span>Me contacter</span></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>© 2026 Star's Sky · Joyce Babake — Lomé, Togo</span>
+  <a href="mailto:babakejoyce@gmail.com">babakejoyce@gmail.com</a>
+</footer>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: clamp(1.5rem, 6vw, 5rem);
+    padding-top: 6rem;
+  }
+  .hero-flame {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 78vh;
+    z-index: 1;
+    cursor: grab;
+    touch-action: none;
+  }
+  .hero-flame.grabbing { cursor: grabbing; }
+
+  .hero-hint {
+    position: absolute;
+    top: clamp(5.5rem, 12vh, 7rem);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.74rem;
+    color: var(--smoke);
+    letter-spacing: 0.04em;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .hero-hint-icon { color: var(--gold-light); font-size: 0.9rem; }
+
+  .hero-text {
+    position: relative; z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero-title {
+    font-size: clamp(3.4rem, 13vw, 8.5rem);
+    line-height: 0.96;
+  }
+  .hero-byline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--smoke);
+    margin-top: 0.6rem;
+  }
+  .hero-claim {
+    margin-top: 0.8rem;
+    color: var(--smoke);
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+  .hero-scroll {
+    margin: 3rem auto 0;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--smoke-dim);
+  }
+  .hero-scroll-line {
+    width: 1px; height: 46px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2.2s infinite;
+  }
+  @keyframes scrollPulse {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* TICKER */
+  .ticker {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    padding: 1.3rem 0;
+    white-space: nowrap;
+  }
+  .ticker-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 2.2rem;
+    animation: tickerScroll 32s linear infinite;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--smoke);
+  }
+  .ticker-track .dot { color: var(--gold); font-size: 0.7rem; }
+  @keyframes tickerScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* INTRO */
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 3rem;
+  }
+  .intro-quote {
+    font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+    line-height: 1.3;
+    max-width: 880px;
+    color: var(--bone);
+  }
+  .intro-link { margin-top: 2rem; }
+
+  /* SKILLS PREVIEW */
+  .skill-row { border-top: 1px solid var(--line); margin-top: 2.5rem; }
+  .skill-line {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--line);
+    transition: padding-left 0.4s var(--ease);
+  }
+  .skill-line:hover { padding-left: 1rem; }
+  .skill-num { font-family: var(--serif); color: var(--gold); font-size: 0.95rem; }
+  .skill-name { font-family: var(--serif); font-size: clamp(1.3rem, 2.6vw, 1.9rem); color: var(--bone); }
+  .skill-tags { font-size: 0.78rem; color: var(--smoke-dim); letter-spacing: 0.03em; text-align: right; }
+
+  /* WORK PREVIEW */
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .work-card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 2.2rem;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--glass);
+    overflow: hidden;
+    transition: border-color 0.4s, transform 0.4s var(--ease);
+  }
+  .work-card:hover { border-color: var(--line-bright); transform: translateY(-6px); }
+  .work-card-glow {
+    position: absolute; top: -40%; right: -30%;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(212,168,67,0.18), transparent 70%);
+    opacity: 0; transition: opacity 0.5s;
+  }
+  .work-card:hover .work-card-glow { opacity: 1; }
+  .work-card-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1rem;
+  }
+  .work-card h3 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: var(--bone);
+  }
+  .work-card p {
+    color: var(--smoke);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin-bottom: 1.4rem;
+  }
+  .work-card-link {
+    font-size: 0.8rem;
+    color: var(--gold);
+  }
+  .all-projects-btn { display: flex; width: fit-content; margin: 0 auto; }
+
+  /* CTA FINAL */
+  .cta-final { text-align: center; }
+  .cta-final-inner { max-width: 700px; margin: 0 auto; }
+  .cta-final-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 1rem 0 2.5rem;
+  }
+
+  @media (max-width: 760px) {
+    .intro-grid { grid-template-columns: 1fr; }
+    .hero-hint { display: none; }
+    .skill-line { grid-template-columns: 40px 1fr; }
+    .skill-tags { display: none; }
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/flame3d.js"></script>
+</body>
+</html>

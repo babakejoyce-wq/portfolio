@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Star's Sky · Joyce Babake</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="page-transition"><span class="page-transition-mark">✦</span></div>
+
+<nav class="nav">
+  <a href="index.html" class="nav-mark" data-transition>
+    <span class="nav-mark-glyph">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M50 8C50 8 72 32 72 54C72 70 62 80 50 80C38 80 28 70 28 54C28 38 38 30 38 30C38 30 42 42 48 42C54 42 50 22 50 8Z" fill="url(#navgrad4)"/>
+        <defs><linearGradient id="navgrad4" x1="28" y1="8" x2="72" y2="80"><stop stop-color="#f5e1a4"/><stop offset="1" stop-color="#b8762e"/></linearGradient></defs>
+      </svg>
+    </span>
+    <span class="nav-mark-text">Star's <em>Sky</em></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-transition>Accueil</a></li>
+    <li><a href="apropos.html" data-transition>À propos</a></li>
+    <li><a href="projets.html" data-transition>Projets</a></li>
+    <li><a href="contact.html" data-transition class="active">Contact</a></li>
+  </ul>
+  <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html" data-transition>Accueil</a>
+  <a href="apropos.html" data-transition>À propos</a>
+  <a href="projets.html" data-transition>Projets</a>
+  <a href="contact.html" data-transition>Contact</a>
+</div>
+
+<header class="page-hero">
+  <div class="eyebrow r" data-delay="100">Contact</div>
+  <h1 class="display page-hero-title r-mask">
+    <span class="line">Parlons de<br><em>votre projet.</em></span>
+  </h1>
+</header>
+
+<section class="section contact-main">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="lede contact-intro r" data-delay="100">
+        Que ce soit pour un site vitrine, une boutique en ligne ou une application sur mesure — écrivez-moi. Je réponds personnellement à chaque message.
+      </p>
+
+      <div class="contact-channels">
+        <a href="mailto:babakejoyce@gmail.com" class="contact-channel r magnetic" data-delay="180">
+          <span class="contact-channel-label">Email</span>
+          <span class="contact-channel-value">babakejoyce@gmail.com</span>
+        </a>
+        <a href="https://github.com/babakejoyce-wq" target="_blank" class="contact-channel r magnetic" data-delay="240">
+          <span class="contact-channel-label">GitHub</span>
+          <span class="contact-channel-value">babakejoyce-wq</span>
+        </a>
+        <div class="contact-channel r" data-delay="300">
+          <span class="contact-channel-label">WhatsApp</span>
+          <span class="contact-channel-value">Sur demande par email</span>
+        </div>
+        <div class="contact-channel r" data-delay="360">
+          <span class="contact-channel-label">Localisation</span>
+          <span class="contact-channel-value">Lomé, Togo</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form r" data-delay="150" id="contactForm">
+      <div class="form-row">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required placeholder="Votre nom">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+      </div>
+      <div class="form-row">
+        <label for="project">Type de projet</label>
+        <select id="project" name="project">
+          <option>Site vitrine</option>
+          <option>Boutique en ligne</option>
+          <option>Application web</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Parlez-moi de votre projet..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-fill magnetic" style="width:100%; justify-content:center;">
+        <span>Envoyer le message</span>
+      </button>
+      <p class="form-note">Ce formulaire ouvre votre client mail avec le message pré-rempli.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>© 2026 Star's Sky · Joyce Babake — Lomé, Togo</span>
+  <a href="mailto:babakejoyce@gmail.com">babakejoyce@gmail.com</a>
+</footer>
+
+<style>
+  .page-hero { padding: clamp(8rem, 16vh, 11rem) clamp(1.5rem, 6vw, 5rem) 3rem; }
+  .page-hero-title { font-size: clamp(2.4rem, 6.5vw, 4.4rem); line-height: 1.08; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(2.5rem, 6vw, 5rem);
+  }
+  .contact-intro { font-size: 1.1rem; max-width: 420px; margin-bottom: 2.5rem; }
+
+  .contact-channels { display: flex; flex-direction: column; }
+  .contact-channel {
+    display: flex; flex-direction: column; gap: 4px;
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+    transition: padding-left 0.35s var(--ease);
+  }
+  .contact-channel:hover { padding-left: 0.8rem; }
+  .contact-channel-label {
+    font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--smoke-dim);
+  }
+  .contact-channel-value {
+    font-family: var(--serif); font-size: 1.3rem; color: var(--bone);
+  }
+  .contact-channel:hover .contact-channel-value { color: var(--gold-light); }
+
+  .contact-form {
+    background: var(--glass);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: clamp(1.8rem, 4vw, 2.6rem);
+  }
+  .form-row { margin-bottom: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .form-row label {
+    font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--smoke);
+  }
+  .form-row input, .form-row select, .form-row textarea {
+    background: var(--void);
+    border: 1px solid var(--line-bright);
+    border-radius: 3px;
+    padding: 0.85rem 1rem;
+    color: var(--bone);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212,168,67,0.1);
+  }
+  .form-note {
+    margin-top: 1rem;
+    font-size: 0.74rem;
+    color: var(--smoke-dim);
+    text-align: center;
+  }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const project = document.getElementById('project').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent(`Projet : ${project} — ${name}`);
+    const body = encodeURIComponent(`Nom : ${name}\nEmail : ${email}\nType de projet : ${project}\n\nMessage :\n${message}`);
+    window.location.href = `mailto:babakejoyce@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html> 
