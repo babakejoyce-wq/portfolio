@@ -267,6 +267,16 @@ a { color: inherit; }
   font-weight: 300;
 }
 
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  border: 1px solid var(--line-bright);
+  color: var(--gold-light);
+}
+
 /* ============================================
    BOUTONS
    ============================================ */

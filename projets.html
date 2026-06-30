@@ -46,7 +46,7 @@
     <span class="line">Ce que j'ai <em>construit.</em></span>
   </h1>
   <p class="lede page-hero-sub r" data-delay="300" style="max-width:560px; margin-top:1.2rem;">
-    Trois projets, trois étapes différentes — d'une boutique déjà en ligne à une application encore en chantier. Chacun raconte une partie de mon approche.
+    Du site déjà en ligne au prototype encore en chantier — chaque projet raconte une partie de mon approche, de l'idée jusqu'au code.
   </p>
 </header>
 
@@ -157,6 +157,94 @@
       <div class="project-links">
         <a href="https://dessin-anime-personnalis-e.vercel.app/" target="_blank" class="btn btn-fill magnetic"><span>Visiter le site ↗</span></a>
         <a href="https://github.com/babakejoyce-wq/dessin-anime_personnalis-e" target="_blank" class="btn btn-line magnetic">Voir le code ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJET 4 — SGB -->
+<section class="section project-feature alt">
+  <div class="project-grid reverse r">
+    <div class="project-info">
+      <span class="project-status status-progress">Prototype d'application</span>
+      <h2 class="display project-title">SGB — Gestion de bibliothèque</h2>
+      <p class="lede">
+        Système de gestion de bibliothèque pensé pour l'Université Excellence — emprunts, retours, réservations, pénalités et statistiques, réunis dans un tableau de bord animé.
+      </p>
+      <div class="tag-row project-tags">
+        <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://sgb-pied.vercel.app/" target="_blank" class="btn btn-fill magnetic"><span>Visiter le site ↗</span></a>
+      </div>
+    </div>
+    <div class="project-visual">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+          <span class="browser-url">sgb-pied.vercel.app</span>
+        </div>
+        <div class="browser-body sgb-mock">
+          <div class="sgb-mock-side">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="sgb-mock-main">
+            <div class="sgb-mock-stats">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="sgb-mock-table">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJET 5 — BLOG LARAVEL -->
+<section class="section project-feature">
+  <div class="project-grid r">
+    <div class="project-visual">
+      <div class="video-frame">
+        <span class="video-frame-label">Aperçu vidéo à venir</span>
+      </div>
+    </div>
+    <div class="project-info">
+      <span class="project-status status-progress">En développement</span>
+      <h2 class="display project-title">Blog Laravel</h2>
+      <p class="lede">
+        Un site de blog construit avec Laravel — gestion d'articles, mise en page propre, pensé comme terrain d'apprentissage du framework côté backend.
+      </p>
+      <div class="tag-row project-tags">
+        <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/babakejoyce-wq/blog" target="_blank" class="btn btn-line magnetic">Voir le code ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJET 6 — COVOITURAGE LARAVEL -->
+<section class="section project-feature alt">
+  <div class="project-grid reverse r">
+    <div class="project-info">
+      <span class="project-status status-progress">En développement</span>
+      <h2 class="display project-title">Covoiturage</h2>
+      <p class="lede">
+        Application de mise en relation pour le covoiturage — proposer un trajet, en rechercher un, gérer les réservations entre conducteurs et passagers.
+      </p>
+      <div class="tag-row project-tags">
+        <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/babakejoyce-wq/covoiturage-laravel" target="_blank" class="btn btn-line magnetic">Voir le code ↗</a>
+      </div>
+    </div>
+    <div class="project-visual">
+      <div class="video-frame">
+        <span class="video-frame-label">Aperçu vidéo à venir</span>
       </div>
     </div>
   </div>
@@ -287,6 +375,34 @@
   }
   .cartoon-mock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .cartoon-mock-grid span { height: 90px; background: var(--void-3); border-radius: 4px; border: 1px solid var(--line); }
+
+  /* SGB mock */
+  .sgb-mock { display: grid; grid-template-columns: 70px 1fr; gap: 12px; }
+  .sgb-mock-side { display: flex; flex-direction: column; gap: 8px; }
+  .sgb-mock-side span { height: 28px; background: var(--void-3); border-radius: 3px; border: 1px solid var(--line); }
+  .sgb-mock-side span:first-child { background: rgba(212,168,67,0.18); border-color: var(--line-bright); }
+  .sgb-mock-main { display: flex; flex-direction: column; gap: 12px; }
+  .sgb-mock-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .sgb-mock-stats span { height: 44px; background: var(--void-3); border-radius: 4px; border: 1px solid var(--line); }
+  .sgb-mock-table { display: flex; flex-direction: column; gap: 6px; }
+  .sgb-mock-table span { height: 24px; background: var(--void-3); border-radius: 3px; border: 1px solid var(--line); }
+
+  /* Cadre vidéo (aperçus à venir) */
+  .video-frame {
+    aspect-ratio: 16/10;
+    border: 1px dashed var(--line-bright);
+    border-radius: 8px;
+    background: var(--void-2);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .video-frame-label {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--smoke-dim);
+    font-size: 0.95rem;
+  }
 
   .cta-final { text-align: center; }
   .cta-final-inner { max-width: 700px; margin: 0 auto; }
