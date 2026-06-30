@@ -277,6 +277,33 @@ a { color: inherit; }
   color: var(--gold-light);
 }
 
+/* Cadre vidéo (aperçus projets) */
+.video-frame {
+  aspect-ratio: 16/10;
+  border: 1px solid var(--line-bright);
+  border-radius: 8px;
+  background: var(--void-2);
+  overflow: hidden;
+  position: relative;
+}
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-frame-label {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--smoke-dim);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
 /* ============================================
    BOUTONS
    ============================================ */
